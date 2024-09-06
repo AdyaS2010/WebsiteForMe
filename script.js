@@ -1,4 +1,4 @@
-// Smooth Scrolling Features
+// Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Dynamic Project Section. Oh Yeah! 
+// Dynamic Project Section
 const projects = [
     {
         title: "Volunteering App",
@@ -17,12 +17,10 @@ const projects = [
     {
         title: "Interactive Website",
         description: "A personal website with interactive features."
-    },
-    // Will add more projects here later on ... 
+    }
 ];
 
-const projectSection = document.getElementById('projects');
-const projectList = document.createElement('ul');
+const projectList = document.getElementById('project-list');
 
 projects.forEach(project => {
     const listItem = document.createElement('li');
@@ -30,21 +28,8 @@ projects.forEach(project => {
     projectList.appendChild(listItem);
 });
 
-projectSection.appendChild(projectList);
-
 // Contact Form Validation
-const contactForm = document.createElement('form');
-contactForm.innerHTML = `
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-    <button type="submit">Send</button>
-`;
-
-document.getElementById('contact').appendChild(contactForm);
+const contactForm = document.getElementById('contact-form');
 
 contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -58,4 +43,28 @@ contactForm.addEventListener('submit', function (e) {
     } else {
         alert('Please fill out all fields.');
     }
+});
+
+// Dark Mode Toggle
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+// Back to Top Button
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
