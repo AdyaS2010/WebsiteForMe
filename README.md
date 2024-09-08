@@ -51,6 +51,6 @@ This project is not currently licensed under any license.
 
 ## Contact
 
-For any questions or inquiries, please reach out to me at gmail.com (mailto:gmail.com).
+For any questions or inquiries, please reach out to me! 
 
 !!!Thank you for visiting my personal website!!!
