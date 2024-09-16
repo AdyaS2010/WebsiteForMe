@@ -2,6 +2,12 @@
 
 Welcome to my personal website! This site showcases my projects, interests, and experiences. It's built using HTML, CSS, and JS (the tri-standard :D)!
 
+# House-keeping
+*Link to Website*: https://adyas2010.github.io/WebsiteForMe/ 
+
+![image](https://github.com/user-attachments/assets/a1736d9d-1a79-40ad-b9d2-7106a86f967b)
+*to be improved upon definitely!*
+
 ## Features
 
 - **Portfolio**: A collection of my projects, including the Volunteering App for high school students and the Scratch project.
